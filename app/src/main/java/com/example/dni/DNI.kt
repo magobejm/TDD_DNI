@@ -1,5 +1,6 @@
 package com.example.dni
 
+/*
 Son cadenas de 9 caracteres.
 Los primeros 8 caracteres son números, y el último es una letra.
 La letra puede ser cualquiera, excepto U, I, O y Ñ.
@@ -32,6 +33,16 @@ Resto	Letra
 20	C
 21	K
 22	E
+*/
 
 class DNI(val dni: String) {
+    init {
+        if (dni.length > 9)
+            throw LengthException("Demasiado Larga")
+
+        if (dni.length < 9)
+            throw LengthException("Demasiado Corta")
+
+        throw DomainException("Acaba en número")
+    }
 }
