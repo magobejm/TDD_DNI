@@ -34,6 +34,6 @@ Resto	Letra
 22	E
 
 
-//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
+//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
 class DNI(val dni: String) {
 }
