@@ -33,7 +33,6 @@ Resto	Letra
 21	K
 22	E
 
-
 //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
 class DNI(val dni: String) {
 }
